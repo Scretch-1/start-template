@@ -151,6 +151,30 @@ $('#clock').countdown(fiveSeconds, {elapse: true})
 	$( document ).tooltip();
 // -end Tooltip
 
+	//SVG Fallback
+	if(!Modernizr.svg) {
+		$("img[src*='svg']").attr("src", function() {
+			return $(this).attr("src").replace(".svg", ".png");
+		});
+	};
+
+	// OwlCarousel
+	// documentation https://github.com/OwlCarousel2/OwlCarousel2
+	$('.owl-carousel').owlCarousel();
+	// -end OwlCarousel
+
+	//Chrome Smooth Scroll
+	try {
+		$.browserSelector();
+		if($("html").hasClass("chrome")) {
+			$.smoothScroll();
+		}
+	} catch(err) {
+
+	};
+
+	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
+
 // ajax form
 // Обязательно присутствует вместе с "mail.php"
 $("form.callback").submit(function() { //Change
@@ -174,5 +198,9 @@ $("form.callback").submit(function() { //Change
 // documentation https://jqueryvalidation.org/documentation
 $("#commentForm").validate();
 // -end validate form
+
+// preloader
+	$(".loader").delay(400).fadeOut("slow");
+	$(".loader-inner").fadeOut();
 
 });

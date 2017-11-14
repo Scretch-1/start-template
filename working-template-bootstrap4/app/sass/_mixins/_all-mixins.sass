@@ -47,7 +47,21 @@
   white-space: nowrap
   overflow: hidden
   text-overflow: ellipsis
-
+  
+// усечение блока с текстом с указанием максимального количества строк
+// пример: @include ellipsis(2em,1);
+=ellipsis($max-height, $lines: 2)
+  // Fallback for non-webkit browsers.
+  // Fallback does not render ellipsis.
+  overflow: hidden
+  max-height: $max-height
+  // Webkit solution for multiline ellipsis
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  -webkit-line-clamp: $lines
+  // Solution for Opera
+  text-overflow: -o-ellipsis-lastline
+  
 // Стилизация placeholder
 // пример: @include place($red);
 =place($cl)
@@ -285,3 +299,59 @@ $color-stack: (group: orange, id: normal, color: #e67835), (group: orange, id: p
 
     @if $group == map-get($color, group) and $shade == map-get($color, id)
       @return rgba(map-get($color, color), $transparency)
+      
+// Media enquiries
+$xl: 1140px
+$lg: 991px
+$md: 767px
+$sm: 576px
+$extrasmall: 320px
+
+=lg($media)
+  @if $media == min-w
+    @media only screen and (min-width: $xl)
+      @content
+
+=md($media)
+  @if $media == max-w
+    @media only screen and (max-width: $xl)
+      @content
+  @else if $media == med-w
+    @media only screen and (min-width: $lg + 1) and (max-width: $xl - 1)
+      @content
+  @else if $media == min-w
+    @media only screen and (min-width: $lg)
+      @content
+
+=sm($media)
+  @if $media == max-w
+    @media only screen and (max-width: $lg)
+      @content
+  @else if $media == med-w
+    @media only screen and (min-width: $md + 1) and (max-width: $lg - 1)
+      @content
+  @else if $media == min-w
+    @media only screen and (min-width: $md)
+      @content
+
+=sml($media)
+  @if $media == max-w
+    @media only screen and (max-width: $md)
+      @content
+  @else if $media == med-w
+    @media only screen and (min-width: $sm + 1) and (max-width: $md - 1)
+      @content
+  @else if $media == min-w
+    @media only screen and (min-width: $sm)
+      @content
+
+=xs($media)
+  @if $media == max-w
+    @media only screen and (max-width: $sm)
+      @content
+  @else if $media == med-w
+    @media only screen and (min-width: $extrasmall + 1) and (max-width: $small - 1)
+      @content
+  @else if $media == min-w
+    @media only screen and (min-width: $extrasmall)
+      @content
