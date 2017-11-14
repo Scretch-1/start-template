@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Шаблон элементов</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+	
+	<!-- BEGIN all elements -->
+	<div class="all elements">
+
+		<div style="background: beige; padding-bottom: 1em;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="padding-top: 2em; color: tomato">
+						<h3>Typography</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+			
+						<!-- BEGIN Typography -->
+						<h1>Lorem ipsum dolor sit amet.</h1>
+						<h2>Lorem ipsum dolor sit amet.</h2>
+						<h3>Lorem ipsum dolor sit amet.</h3>
+						<h4>Lorem ipsum dolor sit amet.</h4>
+						<h5>Lorem ipsum dolor sit amet.</h5>
+						<h6>Lorem ipsum dolor sit amet.</h6>
+						<!-- END Typography -->
+						
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div style="background: lightcyan; padding-bottom: 1em;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="padding-top: 2em; color: tomato">
+						<h3>Accordion</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+			
+						<!-- BEGIN accordion -->
+						<div id="accordion">
+							<h3>Section 1</h3>
+							<div>
+								<p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.</p>
+							</div>
+							<h3>Section 2</h3>
+							<div>
+								<p>Sed non urna. Donec et ante.</p>
+							</div>
+							<h3>Section 3</h3>
+							<div>
+								<p>Nam enim risus, molestie et, porta ac, aliquam ac, risus.</p>
+								<ul>
+									<li>List item one</li>
+									<li>List item two</li>
+									<li>List item three</li>
+								</ul>
+							</div>
+							<h3>Section 4</h3>
+							<div>
+								<p>Cras dictum.</p>
+								<p>Suspendisse eu nisl.</p>
+							</div>
+						</div>
+						<!-- END accordion -->
+			
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div style="background: beige; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>Autocomplete</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+			
+						<!-- BEGIN autocomplete -->
+						<div class="ui-widget">
+							<label for="tags">Tags: </label>
+							<input id="tags">
+						</div>
+						<!-- END autocomplete -->
+						
+			
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div style="background: lightcyan; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>item</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						
+					<!-- BEGIN Button -->
+					<div class="widget">
+						<h4>Widget Buttons</h4>
+						<button class="btn">A button element</button>
+						<input class="btn" type="submit" value="A submit button">
+						<a class="btn" href="#">An anchor</a>
+					</div>
+					<h4>CSS Buttons</h4>
+					<button class="btn ui-button ui-widget ui-corner-all">A button element</button>
+					<input class="btn ui-button ui-widget ui-corner-all" type="submit" value="A submit button">
+					<a class="btn ui-button ui-widget ui-corner-all" href="#">An anchor</a>
+					<!-- END Button -->
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div style="background: beige; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>Checkboxradio</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						
+						<!-- BEGIN Checkboxradio -->
+						<div class="widget">
+
+							<fieldset>
+								<legend>Select a Location: </legend>
+								<label for="radio-1">New York</label>
+								<input type="radio" name="radio-1" id="radio-1">
+								<label for="radio-2">Paris</label>
+								<input type="radio" name="radio-1" id="radio-2">
+								<label for="radio-3">London</label>
+								<input type="radio" name="radio-1" id="radio-3">
+							</fieldset>
+
+							<fieldset>
+								<legend>Hotel Ratings: </legend>
+								<label for="checkbox-1">2 Star</label>
+								<input type="checkbox" name="checkbox-1" id="checkbox-1">
+								<label for="checkbox-2">3 Star</label>
+								<input type="checkbox" name="checkbox-2" id="checkbox-2">
+								<label for="checkbox-3">4 Star</label>
+								<input type="checkbox" name="checkbox-3" id="checkbox-3">
+								<label for="checkbox-4">5 Star</label>
+								<input type="checkbox" name="checkbox-4" id="checkbox-4">
+							</fieldset>
+
+							<fieldset>
+								<legend>Bed Type: </legend>
+								<label for="checkbox-nested-1">2 Double
+									<input type="checkbox" name="checkbox-nested-1" id="checkbox-nested-1">
+								</label>
+								<label for="checkbox-nested-2">2 Queen
+									<input type="checkbox" name="checkbox-nested-2" id="checkbox-nested-2">
+								</label>
+								<label for="checkbox-nested-3">1 Queen
+									<input type="checkbox" name="checkbox-nested-3" id="checkbox-nested-3">
+								</label>
+								<label for="checkbox-nested-4">1 King
+									<input type="checkbox" name="checkbox-nested-4" id="checkbox-nested-4">
+								</label>
+							</fieldset>
+						</div>
+						<!-- END Checkboxradio -->
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div style="background: lightcyan; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>Controlgroup</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						
+						<!-- BEGIN Controlgroup -->
+						<div class="widget">
+							<fieldset>
+								<legend>Rental Car</legend>
+								<div class="controlgroup">
+									<select id="car-type">
+										<option>Compact car</option>
+										<option>Midsize car</option>
+										<option>Full size car</option>
+										<option>SUV</option>
+										<option>Luxury</option>
+										<option>Truck</option>
+										<option>Van</option>
+									</select>
+									<label for="transmission-standard">Standard</label>
+									<input type="radio" name="transmission" id="transmission-standard">
+									<label for="transmission-automatic">Automatic</label>
+									<input type="radio" name="transmission" id="transmission-automatic">
+									<label for="insurance">Insurance</label>
+									<input type="checkbox" name="insurance" id="insurance">
+									<label for="horizontal-spinner" class="ui-controlgroup-label"># of cars</label>
+									<input id="horizontal-spinner" class="ui-spinner-input">
+									<button>Book Now!</button>
+								</div>
+							</fieldset>
+							<br>
+							<fieldset>
+								<legend>Rental Car</legend>
+								<div class="controlgroup-vertical">
+									<select>
+										<option>Compact car</option>
+										<option>Midsize car</option>
+										<option>Full size car</option>
+										<option>SUV</option>
+										<option>Luxury</option>
+										<option>Truck</option>
+										<option>Van</option>
+									</select>
+									<label for="transmission-standard-v">Standard</label>
+									<input type="radio" name="transmission-v" id="transmission-standard-v">
+									<label for="transmission-automatic-v">Automatic</label>
+									<input type="radio" name="transmission-v" id="transmission-automatic-v">
+									<label for="insurance-v">Insurance</label>
+									<input type="checkbox" name="insurance" id="insurance-v">
+									<label for="vertical-spinner" class="ui-controlgroup-label"># of cars</label>
+									<input id="vertical-spinner" class="ui-spinner-input">
+									<button id="book">Book Now!</button>
+								</div>
+							</fieldset>
+						</div>
+						<!-- END Controlgroup -->
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div style="background: beige; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>Datepicker</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						
+						<!-- BEGIN Datepicker -->
+						<p>Date: <input type="text" id="datepicker"></p>
+						<!-- END Datepicker -->
+
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<div style="background: lightcyan; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>Dialog</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						
+						<!-- BEGIN Dialog -->
+						<div class="widget">
+							<button class="btn" id="opener">Open Dialog</button>
+							
+							<div id="dialog" title="Basic dialog">
+								<p>This</p>
+							</div>
+						</div>
+						<!-- END Dialog -->
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div style="background: beige; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>Menu</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-2">
+						
+						<!-- BEGIN Menu -->
+						<ul id="menu">
+							<li class="ui-state-disabled"><div>Toys (n/a)</div></li>
+							<li><div>Books</div></li>
+							<li><div>Clothing</div></li>
+							<li><div>Electronics</div>
+								<ul>
+									<li class="ui-state-disabled"><div>Home Entertainment</div></li>
+									<li><div>Car Hifi</div></li>
+									<li><div>Utilities</div></li>
+								</ul>
+							</li>
+							<li><div>Movies</div></li>
+							<li><div>Music</div>
+								<ul>
+									<li><div>Rock</div>
+										<ul>
+											<li><div>Alternative</div></li>
+											<li><div>Classic</div></li>
+										</ul>
+									</li>
+									<li><div>Jazz</div>
+										<ul>
+											<li><div>Freejazz</div></li>
+											<li><div>Big Band</div></li>
+											<li><div>Modern</div></li>
+										</ul>
+									</li>
+									<li><div>Pop</div></li>
+								</ul>
+							</li>
+							<li class="ui-state-disabled"><div>Specials (n/a)</div></li>
+						</ul>
+						<!-- END Menu -->
+
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<div style="background: lightcyan; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>Progressbar</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						
+						<!-- BEGIN Progressbar -->
+						<div id="progressbar"></div>
+						<!-- END Progressbar -->
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div style="background: beige; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>Selectmenu</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						
+						<!-- BEGIN Selectmenu -->
+						<div class="demo">
+
+							<form action="#">
+
+								<fieldset>
+									<label for="speed">Select a speed</label>
+									<select name="speed" id="speed">
+										<option>Slower</option>
+										<option>Slow</option>
+										<option selected="selected">Medium</option>
+										<option>Fast</option>
+										<option>Faster</option>
+									</select>
+									<br>
+									<label for="files">Select a file</label>
+									<select name="files" id="files">
+										<optgroup label="Scripts">
+											<option value="jquery">jQuery.js</option>
+											<option value="jqueryui">ui.jQuery.js</option>
+										</optgroup>
+										<optgroup label="Other files">
+											<option value="somefile">Some unknown file</option>
+											<option value="someotherfile">Some other file with a very long option text</option>
+										</optgroup>
+									</select>
+									<br>
+									<label for="number">Select a number</label>
+									<select name="number" id="number">
+										<option>1</option>
+										<option selected="selected">2</option>
+										<option>3</option>
+										<option>4</option>
+										<option>5</option>
+										<option>6</option>
+										<option>7</option>
+										<option>8</option>
+										<option>9</option>
+										<option>10</option>
+										<option>11</option>
+										<option>12</option>
+										<option>13</option>
+										<option>14</option>
+										<option>15</option>
+										<option>16</option>
+										<option>17</option>
+										<option>18</option>
+										<option>19</option>
+									</select>
+									<br>
+									<label for="salutation">Select a title</label>
+									<select name="salutation" id="salutation">
+										<option disabled selected>Please pick one</option>
+										<option>Mr.</option>
+										<option>Mrs.</option>
+										<option>Dr.</option>
+										<option>Prof.</option>
+										<option>Other</option>
+									</select>
+								</fieldset>
+
+							</form>
+
+						</div>
+						<!-- END Selectmenu -->
+
+					</div>
+				</div>
+			</section>
+		</div>
+		
+		<div style="background: lightcyan; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>Slider</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						
+						<!-- BEGIN Slider -->
+						<div id="slider"></div>
+						<!-- END Slider -->
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div style="background: beige; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>Spinner</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						
+						<!-- BEGIN Spinner -->
+						<p>
+							<label for="spinner">Select a value:</label>
+							<input id="spinner" name="value">
+						</p>
+
+						<p>
+							<button id="disable">Toggle disable/enable</button>
+							<button id="destroy">Toggle widget</button>
+						</p>
+
+						<p>
+							<button id="getvalue">Get value</button>
+							<button id="setvalue">Set value to 5</button>
+						</p>
+						<!-- END Spinner -->
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div style="background: lightcyan; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>Tabs</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						
+						<!-- BEGIN Tabs -->
+						<div id="tabs">
+							<ul>
+							<li><a href="#tabs-1">One</a></li>
+							<li><a href="#tabs-2">Two</a></li>
+							<li><a href="#tabs-3">Three</a></li>
+							</ul>
+							<div id="tabs-1">
+								<p>Proin elit arcu</p>
+							</div>
+							<div id="tabs-2">
+								<p>Morbi tincidunt, dui sit</p>
+							</div>
+							<div id="tabs-3">
+								<p>Mauris</p>
+								<p>Duis cursus. Maecenas</p>
+							</div>
+						</div>
+						<!-- END Tabs -->
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div style="background: beige; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>Tooltip</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						
+						<!-- BEGIN Tooltip -->
+						<p><a href="#" title="That&apos;s what this widget is">Tooltips</a> can be attached</p>
+						<p>But<a href="http://jqueryui.com/themeroller/" title="ThemeRoller: jQuery UI&apos;s theme builder application">ThemeRoller</a> will</p>
+						<p><label for="age">Your age:</label><input id="age" title="We ask for your age only for statistical purposes."></p>
+						<!-- END Tooltip -->
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div style="background: lightcyan; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>ajax form <span style="color: blue; font-size: 0.5em">__требуется доработать__ <sup>*</sup></span></h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						
+						<!-- BEGIN ajax form -->
+						<!-- Скачиваем с Github https://github.com/agragregra/uniMail и распаковываем в проект -->
+						<form id="form" class="callback">
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Название сайта">
+							<input type="hidden" name="admin_email" value="oleg-02.plehanov@yandex.ru">
+							<input type="hidden" name="form_subject" value="Заявка с формы 1">
+							<!-- END Hidden Required Fields -->
+							<input type="hidden" name="Страница" value=""> <!-- Поле для проверки с какой страницы пришло сообщение (для проектов из множества страниц) -->
+
+							<input type="text" name="name" placeholder="Ваше имя" required /><br />
+							<input type="tel" name="phone" placeholder="Ваш телефон" required /><br />
+							<input type="email" name="email" placeholder="Ваш email" required /><br />
+							<button type="submit">Отправить</button>
+						</form>
+						<div class="success"><span>Спасибо за заявку!</span></div>
+						<!-- END ajax form -->
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div style="background: beige; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>Validate form</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						
+						<!-- BEGIN Validate form -->
+						<form class="cmxform" id="commentForm" method="post" action="#">
+							<fieldset>
+								<legend>Укажите свое имя, адрес электронной почты</legend>
+								<p>
+									<label for="cname">Имя (не менее 2-х символов)</label>
+									<input id="cname" name="name" minlength="2" type="text" required>
+								</p>
+								<p>
+									<label for="cemail">E-Mail (обязательно)</label>
+									<input id="cemail" type="email" name="email" required>
+								</p>
+								<p>
+									<label for="curl">URL (необязательное)</label>
+									<input id="curl" type="url" name="url">
+								</p>
+								<p>
+									<label for="ccomment">Ваш комментарий (обязательно)</label>
+									<textarea id="ccomment" name="comment" required></textarea>
+								</p>
+								<p>
+									<button type="submit">Отправить</button>
+								</p>
+							</fieldset>
+						</form>
+						<!-- END Validate form -->
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div style="background: lightcyan; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>countdown</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						
+						<!-- BEGIN countdown -->
+						<div class="countdown">
+							<div id="clock"></div>
+						</div>
+						<!-- END countdown -->
+
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div style="background: beige; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>item</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12"></div>
+				</div>
+			</section>
+		</div>
+
+		<div style="background: lightcyan; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>item</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12"></div>
+				</div>
+			</section>
+		</div>
+
+		<div style="background: beige; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>item</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12"></div>
+				</div>
+			</section>
+		</div>
+
+		<div style="background: lightcyan; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>item</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12"></div>
+				</div>
+			</section>
+		</div>
+
+		<div style="background: beige; padding: 1em 0;">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12" style="color: tomato">
+						<h3>item</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12"></div>
+				</div>
+			</section>
+		</div>
+		
+		
+	</div>
+	<!-- END all elements -->
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
