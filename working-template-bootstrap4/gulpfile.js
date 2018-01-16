@@ -30,9 +30,10 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/jquery/jquery.min.js',
 		'app/libs/waypoints/jquery.waypoints.js',
 		'app/libs/animate/animatecss.js',
-		'app/libs/form-validation/dist/jquery.validate.min.js',
+		'app/libs/form-validation/dist/jquery.validate.min.js', /* с не ".min" почему-то ошибка*/
 		'app/libs/owlcarousel/owl.carousel.js',
 		'app/libs/page-scroll-to-id/jquery.malihu.PageScroll2id.js',
+		'app/libs/waves/dist/waves.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
@@ -57,7 +58,7 @@ gulp.task('sass', function() {
 	.pipe(sass({outputStyle: 'expand'}).on("error", notify.onError()))
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(autoprefixer(['last 15 versions']))
-	.pipe(cleanCSS()) // Опционально, закомментировать при отладке
+	// .pipe(cleanCSS()) // Минимизировать весь css (на выбор)
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.reload({stream: true}));
 });
