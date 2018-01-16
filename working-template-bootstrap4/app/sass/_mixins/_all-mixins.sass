@@ -141,25 +141,66 @@
 
 // кнопка color
 // пример @include btn;
+$bds-btn: 5px /* border radius для кнопки */
+$fz-btn: 1em /* размер для кнопки */
 =btn
-  display: inline-block
   border: 1px solid black
+  background-color: transparent
+  box-shadow: none
   color: black
+  font-size: $fz-btn
+  line-height: 1em
   cursor: pointer
+  display: inline-block
   outline: none
-  width: 100%
+  overflow: hidden
   text-align: center
   text-decoration: none
-  padding: 6px 10px
-
-  +br(5px)
-
-  +ts(0, 0, 0, black)
-
-  +grad-l(gray, aqua)
-
-  &:hover
+  padding: 0.5em 1em
+  position: relative
+  vertical-align: middle
+  z-index: 1
+  +br($bds-btn) /* Скругление кнопки */
+  +ts(0, 0, 0, black) /* Тень текста кнопки */
+  &:after
+    +transit
+    +pseudo
+    +br($bds-btn)
+    // content: none /* разкомментировать при отладке */
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    +grad-l(gray, aqua)
+    z-index: -1
+  &:before
+    +transit(all,.15s)
+    +pseudo
+    +br($bds-btn)
+    // content: none /* разкомментировать при отладке */
+    top: -4em
+    bottom: 0
+    left: 0
+    right: 0
     +grad-l(aqua, gray)
+    z-index: -1
+    opacity: 0
+  &:hover
+    border: 1px solid black
+    font-size: $fz-btn
+    &:after
+      z-index: -2
+    &:before
+      top: 0
+      opacity: 1
+  &:active
+  &:focus
+    &:after
+      z-index: -2
+    &:before
+      top: 0
+      opacity: 1
+  &:link
 
 // скругление универсальное
 // пример: @include br(3px);

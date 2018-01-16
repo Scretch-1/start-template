@@ -29,6 +29,24 @@ $(function() {
 	$('.owl-carousel').owlCarousel();
 	// -end OwlCarousel
 
+
+	// page scroll to id
+		// $("nav a").mPageScroll2id(); /*Пример подключения, ссылка на урок https://www.youtube.com/watch?v=YPlHvyYua8c&t=9s*/
+	// -end page scroll to id
+
+	// validate form
+	// documentation https://jqueryvalidation.org/documentation
+	$("#commentForm").validate();
+	// -end validate form
+
+	// wawes options
+	// Источник http://fian.my.id/Waves/#examples 
+	Waves.attach('.waves-effect', ['waves-button']);
+	Waves.attach('.float-buttons', ['waves-button', 'waves-float']);
+	Waves.attach('.float-button-light', ['waves-button', 'waves-float', 'waves-light']);
+	Waves.init(); /*! Обязательно инициализируем */
+	// -end wawes options
+
 	// ajax form
 	// Обязательно присутствует вместе с "mail.php"
 	// ссылка на урок https://www.youtube.com/watch?v=0bexJuzHFRo
@@ -48,15 +66,6 @@ $(function() {
 		return false;
 	});
 	// -end ajax form
-
-	// page scroll to id
-	 // $("nav a").mPageScroll2id(); /*Пример подключения, ссылка на урок https://www.youtube.com/watch?v=YPlHvyYua8c&t=9s*/
-	// -end page scroll to id
-
-	// validate form
-	// documentation https://jqueryvalidation.org/documentation
-	$("#commentForm").validate();
-	// -end validate form
 
 	// preloader
 	$(".loader").delay(400).fadeOut("slow");
