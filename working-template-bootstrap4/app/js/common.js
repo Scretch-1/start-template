@@ -21,7 +21,7 @@ $(function() {
 
 	// animatecss
 	//waypoints official site http://imakewebthings.com/waypoints/
-	$("section h2").animated("zoomInUp"); /*Используется в качестве примера*/
+	// $("section h2").animated("zoomInUp"); /*Используется в качестве примера*/
 	// -end  animatecss
 
 	// OwlCarousel
