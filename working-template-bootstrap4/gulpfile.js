@@ -26,14 +26,15 @@ gulp.task('common-js', function() {
 
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
-		'app/libs/modernizr/modernizr.js',
-		'app/libs/jquery/jquery.min.js',
-		'app/libs/waypoints/jquery.waypoints.js',
-		'app/libs/animate/animatecss.js',
-		'app/libs/form-validation/dist/jquery.validate.min.js', /* с не ".min" почему-то ошибка*/
-		'app/libs/owlcarousel/owl.carousel.js',
-		'app/libs/page-scroll-to-id/jquery.malihu.PageScroll2id.js',
-		'app/libs/waves/dist/waves.js',
+		'app/libs/modernizr/modernizr.js', /* https://modernizr.com/ */
+		'app/libs/jquery/jquery.min.js', /* http://jquery.com/download/ */
+		'app/libs/waypoints/jquery.waypoints.js', /* http://imakewebthings.com/waypoints/ */
+		'app/libs/animate/animatecss.js', /* https://daneden.github.io/animate.css/ */
+		'app/libs/form-validation/dist/jquery.validate.min.js', /* с не ".min" почему-то ошибка  https://jqueryvalidation.org/ */
+		'app/libs/owlcarousel/owl.carousel.js', /* https://owlcarousel2.github.io/OwlCarousel2/ */
+		'app/libs/page-scroll-to-id/jquery.malihu.PageScroll2id.js', /* http://manos.malihu.gr/page-scroll-to-id/ */
+		'app/libs/waves/dist/waves.js', /* http://fian.my.id/Waves/#examples */
+		'app/libs/fancybox/dist/fancybox.js', /* http://fancyapps.com/fancybox/3/ */
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
