@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Шаблон типов полей форм</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style> html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+
+	<!-- BEGIN content -->
+	<form action="#" name="form-one" method="post" class="content">
+		<div class="container">
+			<!-- ПОЛЯ ДЛЯ ТЕКСТА -->
+			<div class="row" style="background-color: lightgray;">
+				<div class="col-sm-12">
+					<fieldset>
+						<legend><h3>Поля для текста</h3></legend>
+						<label for="text-one">Поле текст:</label> <input type="text" name="text-one" id="text-one"> <br>
+						<label for="email-one">Поле e-mail:</label> <input type="email" name="email-one" id="email-one"> <br>
+						<label for="tel-one">Поле телефон:</label> <input type="tel" name="tel-one" id="tel-one"> <br>
+						<label for="password-one">Поле пароль:</label> <input type="password" name="password-one" id="password-one"> <br>
+						<label for="search-one">Поле поиск:</label> <input type="search" name="search-one" id="search-one"> <br>
+						<label for="url-one">Поле URL:</label> <input type="url" name="url-one" id="url-one"> <br>
+						<label for="message-one">Поле для ввода текста:</label> <textarea name="message-one" id="message-one" cols="100" rows="1"></textarea>
+					</fieldset>
+				</div>
+			</div>
+			<!-- ПОЛЯ ДЛЯ ТЕКСТА -->
+
+			<!-- Поля для остальных функций -->
+			<div class="row" style="background-color: lightgray;">
+				<div class="col-sm-12">
+					<fieldset>
+						<legend><h3>Поля для остальных функций</h3></legend>
+						<label for="checkbox-one">Чекбокс:</label> <input type="checkbox" name="checkbox-one" id="checkbox-one"> <br>
+						<label for="color-one">Цвет:</label> <input type="color" name="color-one" id="color-one"> <br>  <!-- Не подерживатся корректно всеми браузерами -->
+						<label for="file-one">Файл:</label> <input type="file" name="file-one" id="file-one"> <br>
+						Поле скрытое: <input type="hidden" name="hidden-one" id="hidden-one"> <br>
+						<label for="number-one">Поле числовое:</label> <input type="number" name="number-one" id="number-one"> <br>
+						<label for="radio-one">Радио кнопка:</label> <input type="radio" name="radio-one" id="radio-one"> <br>
+						<label for="date-one">Вывод даты без времени:</label> <input type="date" name="date-one" id="date-one"> <br> <!-- Не подерживатся корректно всеми браузерами -->
+						<label for="range-one">Поле диапазон:</label> <input type="range" name="range-one" id="range-one"> <br>
+						<label for="datetime-local-one">Контроль ввода даты:</label> <input type="datetime-local" name="datetime-local-one" id="datetime-local-one"> <br> <!-- Не подерживатся корректно всеми браузерами -->
+						<label for="month-one">Поле месяц:</label> <input type="month" name="month-one" id="month-one"> <br> <!-- Не подерживатся корректно всеми браузерами -->
+						<label for="time-one">Поле Время:</label> <input type="time" name="time-one" id="time-one"> <br> <!-- Не подерживатся корректно всеми браузерами -->
+						<label for="week-one">Поле неделя:</label> <input type="week" name="week-one" id="week-one"> <br> <!-- Не подерживатся корректно всеми браузерами -->
+					</fieldset>
+				</div>
+			</div>
+			<!-- Поля для остальных функций -->
+
+			<!-- Поля кнопки -->
+			<div class="row" style="background-color: lightgray;">
+				<div class="col-sm-12">
+					<fieldset>
+						<legend><h3>Поля кнопки</h3></legend>
+						Кнопка обычная: <button type="button" name="button-one" id="button-one">Кнопка</button> <br>
+						Кнопка сброса: <button type="reset" name="reset-one" id="reset-one">Сброс</button> <br>
+						Кнопка подтверждения: <button type="submit" name="submit-one" id="submit-one">Подтвердить</button> <br>
+					</fieldset>
+				</div>
+			</div>
+			<!-- Поля кнопки -->
+			<div class="row">
+				<div class="col-sm-12">
+					<fieldset>
+						<legend><h3>Атрибуты для текстовых полей</h3></legend>
+						<label for="text-two"><strong style="text-decoration: underline;">"autocomplete"</strong> </label> <input type="text" name="text-two" id="text-two" autocomplete="on"> <span>Введённое значение запоминается браузером и при повторном введении, после набора нескольких символов выводит ранее указанное значение.</span> <br>
+						<label for="text-three"><strong style="text-decoration: underline;">"placeholder"</strong></label> <input type="text" name="text-three" id="text-three" placeholder="Ваше имя"> <span>Выводит дополнительную информацию в поле.</span> <br>
+						<label for="text-four"><strong style="text-decoration: underline;">"required"</strong></label> <input type="text" name="text-four" id="text-four" required> <span>Делает поле обязательным для заполнения</span> <br>
+						<label for="text-five"><strong style="text-decoration: underline;">"readonly"</strong></label> <input type="text" name="text-five" id="text-five" readonly> <span>Поле доступно только для чтения</span> <br>
+						<label for="text-six"><strong style="text-decoration: underline;">"size"</strong></label> <input type="text" name="text-six" id="text-six" size="50"> <span>Изменяет длину поля</span> <br>
+						<label for="text-seven"><strong style="text-decoration: underline;">"pattern"</strong></label> <input type="text" name="text-seven" id="text-seven" pattern=""> <span>Нужен для настройки шаблона для проверки полей</span> <br>
+					</fieldset>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<fieldset>
+						<legend><h3>Атрибуты для остальных функций полей</h3></legend>
+						<label for="range-two"><strong style="text-decoration: underline;">"min"</strong> <strong style="text-decoration: underline;">"max"</strong> <strong style="text-decoration: underline;">"step"</strong></label>  <input type="range" name="range-two" id="range-two" min="0" max="1000" step="300"> <span>Указываем минимальное, максимальное и шаговое значение</span> <br>
+						<label for="file-two"><strong style="text-decoration: underline;">"accept" (audio/*,image/*,image/jpg,image/png,video/*)</strong></label> <input type="file" name="file-two" id="file-two" accept="image/png"> <span>Позволяет устанавливать расширения файлов, которые можно загружать</span> <br>
+						<label for="file-three"><strong style="text-decoration: underline;">"multiple"</strong></label> <input type="file" name="file-three" id="file-three" multiple> <span>Определяет любое количество загружаемых файлов и указывает это количество</span> <br>
+						<label for="checkbox-two"><strong style="text-decoration: underline;">"checked"</strong></label> <input type="checkbox" name="checkbox-two" id="checkbox-two" checked> <span>Выбырает по умолчанию чекбокс или радиокнопку</span> <br>
+						<label for="radio-two"><strong style="text-decoration: underline;">"checked"</strong></label> <input type="radio" name="radio-two" id="radio-two" checked> <span>Выбырает по умолчанию чекбокс или радиокнопку</span> <br>
+					</fieldset>
+				</div>
+			</div>
+		</div>
+	</form>
+	<!-- END content -->
+
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

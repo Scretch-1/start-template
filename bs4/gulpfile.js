@@ -36,7 +36,10 @@ gulp.task('styles', function() {
 
 gulp.task('js', function() {
 	return gulp.src([
-		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/modernizr/modernizr.js', /* https://modernizr.com/ */
+		'app/libs/jquery/dist/jquery.min.js', /* http://jquery.com/download/ */
+		// 'app/libs/popperjs/popper.min.js', /* Нужен для работы в паре с бутстрапом версии 4 */
+		// 'app/libs/bootstrap/dist/js/bootstrap.min.js', /* https://getbootstrap.com/ */
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
