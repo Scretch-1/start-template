@@ -4,6 +4,13 @@ $(function() {
 	$(".loader").delay(400).fadeOut("slow");
 	$(".loader-inner").fadeOut();
 
+	// animatecss
+	//waypoints official site http://imakewebthings.com/waypoints/
+	// $("section h2").animated("bounceIn"); 
+
+  //  active tooltips BS4
+  // $('[data-toggle="tooltip"]').tooltip()
+
 	//Chrome Smooth Scroll
 	try {
 		$.browserSelector();

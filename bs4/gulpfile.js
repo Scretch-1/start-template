@@ -29,7 +29,7 @@ gulp.task('styles', function() {
 	.pipe(sass({ outputStyle: 'expand' }).on("error", notify.onError()))
 	.pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 15 versions']))
-	.pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Сжимает Css закомментировать при отладке
+	// .pipe(cleancss( {level: { 1: { specialComments: 0 } } })) // Сжимает Css закомментировать при отладке
 	.pipe(gulp.dest('app/css'))
 	.pipe(browsersync.reload( {stream: true} ))
 });
@@ -38,8 +38,10 @@ gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/modernizr/modernizr.js', /* https://modernizr.com/ */
 		'app/libs/jquery/dist/jquery.min.js', /* http://jquery.com/download/ */
-		// 'app/libs/popperjs/popper.min.js', /* Нужен для работы в паре с бутстрапом версии 4 */
-		// 'app/libs/bootstrap/dist/js/bootstrap.min.js', /* https://getbootstrap.com/ */
+		'app/libs/popperjs/popper.min.js', /* Нужен для работы в паре с бутстрапом версии 4 */
+		'app/libs/bootstrap/dist/js/bootstrap.min.js', /* https://getbootstrap.com/ */
+		// 'app/libs/waypoints/waypoints.js', /* http://imakewebthings.com/waypoints/ */
+		// 'app/libs/animate/animatecss.js', /* https://daneden.github.io/animate.css/ работает вместе с waypoints.js*/
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
