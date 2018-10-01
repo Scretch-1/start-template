@@ -1,0 +1,19 @@
+#header-nav
+  position: fixed
+  top: 0
+  display: block
+  width: 100%
+  background: $accent
+  -webkit-transition: -webkit-transform 0.7s .3s ease
+  -moz-transition: -moz-transform 0.7s .3s ease
+  -ms-transition: -ms-transform 0.7s .3s ease
+  transition: transform 0.7s .3s ease
+  -webkit-backface-visibility: hidden
+  -webkit-transform: translate3d(0px, 0px, 0px)
+
+#header-nav.hide-nav-bar
+  -webkit-transform: translate(0, -100%)
+  -moz-transform: translate(0, -100%)
+  -ms-transform: translate(0, -100%)
+  transform: translate(0, -100%)
+  -webkit-backface-visibility: hidden
