@@ -41,7 +41,10 @@ gulp.task('js', function() {
 		'app/libs/popperjs/popper.min.js', /* Нужен для работы в паре с бутстрапом версии 4 */
 		'app/libs/bootstrap/dist/js/bootstrap.min.js', /* https://getbootstrap.com/ */
 		// 'app/libs/waypoints/waypoints.js', /* http://imakewebthings.com/waypoints/ */
-		// 'app/libs/animate/animatecss.js', /* https://daneden.github.io/animate.css/ работает вместе с waypoints.js*/
+		// 'app/libs/animate/animatecss.js', /*Для анимации https://daneden.github.io/animate.css работает вместе с waypoints.js*/
+		// 'app/libs/CustomScrollbar/CustomScrollbar.js', /*Кастомизированный скроллбар http://manos.malihu.gr/jquery-custom-content-scroller */
+		// 'app/libs/fancybox/dist/fancybox.js', /* Медиаплагин https://fancyapps.com/fancybox/3/ */
+		// 'app/libs/inputmask/inputmask.js', /* https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html */
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

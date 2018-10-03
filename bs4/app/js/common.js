@@ -22,6 +22,11 @@ $(function() {
   //  active tooltips BS4
   // $('[data-toggle="tooltip"]').tooltip()
 
+  // customscrollbar кастомизированный скроллбар http://manos.malihu.gr/jquery-custom-content-scroller/
+  // $(".scrollbar").mCustomScrollbar({
+  // 	theme:"minimal-dark",
+  // });
+
   // ripple effect btn
   // Добавляем элементу класс .ripple Активируем sass файл в libs
   // [].map.call(document.querySelectorAll(".ripple"), el=> {
@@ -49,6 +54,9 @@ $(function() {
 			return $(this).attr("src").replace(".svg", ".png");
 		});
 	};
+
+	// inputmask Маски на поля форм https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html
+	// $('.tel-one').mask('+7 (000) 000-0000');
 
 	// ajax form
 	// Обязательно присутствует вместе с "mail.php"
