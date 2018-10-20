@@ -1,1 +1,78 @@
-// sustom sass
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $df
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+section
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+// preloader
+html.js
+	opacity: 1
+
+html.js .loader
+	background: none repeat scroll 0 0 #fff
+	bottom: 0
+	top: 0
+	left: 0
+	right: 0
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: center
+	height: 100%
+	position: fixed
+	width: 100%
+	z-index: 9999
+
+html.js .loader-inner
+	height: 3em
+	width: 3em
+	border: 0.2em solid transparentize($accent,.7)
+	border-top: 0.2em solid $accent
+	border-radius: 50%
+	animation: rotate 1s infinite linear
+
+@keyframes rotate
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(360deg)
+// -end preloader
+
+// icon
+.icon
+	display: inline-block
+	line-height: .7
+// -end icon
